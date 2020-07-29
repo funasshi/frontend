@@ -5,19 +5,22 @@
 body{
 font-family:Georgia, '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
 margin-left:14%;
-margin-top:61px;
 margin-right:14%;
 }
 
 header{
   height: 730px;
+  /* background-color:pink; */
 }
 
 .title{
-  /* background-color: orange; */
-  color: #121212;
   font-size: 36px;
-  margin-top: 19px;
+  margin-top: 62px;
+  height:40px;
+}
+.title a{
+  text-decoration: none;
+  color: #121212;
 }
 
 .menu-container{
@@ -26,7 +29,15 @@ header{
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  height: 40px;
+}
 
+.menu-container a,.contents a ,footer a{
+  text-decoration: none;
+  color:#444444;
+}
+.menu-container ul ,.contents a:hover, footer a:hover{
+  color:#c9ab53;
 }
 
 
@@ -34,52 +45,63 @@ header{
   font-weight: lighter;
   color:#777;
   padding-top: 5px;
-  font-size: 18px
+  font-size: 18px;
+  /* background-color:red; */
+  width:20%;
 }
+
 nav{
-  float:right;
-  text-align: right;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  /* background-color: yellow; */
+  width:80%;
 }
+
 nav ul{
   list-style: none;
-  display: inline-block;
-  padding-right: 18px;
-
-
-
-
-}
-nav ul li{
-  display: inline-block;
-  padding: 0px 1.15em;
-  margin:0;
-  /* background-color: yellow; */
+  /* background-color: lightblue; */
+  width:500px;
+  width:80%;
+  display: flex;
+  padding-left: 14.5%
 
 }
-
-nav input{
-  height:36px;
-  width:200px;
-  font-family:YuMincho;
-  font-size: 18px;
-  padding:5px;
-  border:#dddddd solid 1px;
-
-}
-nav input :focus{
-  border:#dddddd solid 1px;
+nav .menu{
+  padding:3px 10px;
+  /* background-color: purple; */
+  text-align: center;
 
 }
 
+nav i{
+  padding:0 10px;
+}
 
-.search{
+nav .home{
+  font-size: 100px
+}
+
+
+
+
+/* .search{
   font-size: 1.5em;
   display: block;
   position: relative;
-}
+} */
+
+
+
+
+
+
+
 
 header img{
-  padding-top: 73px;
+  padding-top: 72px;
 }
 
 
@@ -92,6 +114,7 @@ header img{
   /* background-color: yellow; */
   padding-top:10px;
   line-height: 1.8;
+  color:#777;
 }
 
 
@@ -99,7 +122,8 @@ header img{
 .article{
   margin-top:112px;
   /* background-color: green; */
-  border-bottom: solid #e6e6e6 2px;
+  border-bottom: solid #e6e6e6 1px;
+  padding-bottom:5px;
 }
 .article .post{
   height:186px;
@@ -149,18 +173,42 @@ header img{
   display: flex;
   /* background-color: red; */
   /* border:solid blue; */
-  margin-left: 30%;
-  padding-left: 10px;
-  padding-bottom: 100px;
+  margin-left: 20%;
+  padding-left: 124px;
+  margin-bottom: 100px;
+  /* background-color: pink; */
+}
+.index a{
+  text-decoration: none;
+  color:#444444;
+  display: block;
 }
 
-.index li{
+.index a:hover{
+  text-decoration: none;
+  color:#000000;
+}
+
+
+.index .number{
   border:solid 1px #dddddd;
-  height: 50px;
-  width:50px;
+  height: 48px;
+  width:47px;
   text-align: center;
   line-height: 50px;
-  margin: 0 5px;
+  margin: 0 4px;
+  color:#777777;
+  /* background-color: purple; */
+}
+
+.index .next{
+  border:solid 1px #dddddd;
+  height: 48px;
+  width:86px;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 4px;
+  color:#777777;
 }
 
 .footer{
@@ -172,7 +220,7 @@ header img{
   margin-top: 74px;
 }
 .profile{
-  background-color: pink;
+  /* background-color: pink; */
   width:32%;
 }
 
@@ -236,7 +284,7 @@ header img{
 }
 
 .right{
-  background-color: lightblue;
+  /* background-color: lightblue; */
   width:25%;
 }
 .middle{
@@ -248,13 +296,19 @@ header img{
   width: auto;
   border-bottom: solid 1px #dddddd;
   margin-bottom:5px;
+  color:#777;
+  font-weight: lighter;
+}
+.footer  p{
+  color:#777;
+
 }
 
 .footer .post{
   margin-bottom: 15px;
 }
 .category{
-  background-color: yellow;
+  /* background-color: yellow; */
   width:21%;
 
 }
